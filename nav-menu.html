@@ -6,65 +6,102 @@
     <title>Navigation menu</title>
     <style>
         /* CSS for Navbar */
+        h1{ 
+            text-align: center;
+            background-color:pink;
+            color: purple;
+            width: 100%;
+            height: 100%;
+            border: 15px;
+            border-radius: 15px;
+        }
         .navbar {
-            background-color: red;
+            background-color:gainsboro;
             overflow: auto;
-            padding: 10px 20px; /* Add padding to navbar */
+            /* padding: 10px 20px; Add padding to navbar */
+            padding-left: 5%;
         }
 
         .navbar ul {
             list-style-type: none;
-            
+            padding-left: 50%;
         }
 
         .navbar li {
             float: left;
             margin-right: 20px;
+            
         }
 
         .navbar li a {
             display: block;
             padding: 10px;
-            color: white;
+            color: green;
             text-decoration: none;
+            font-size: 20px;
+            border-radius: 10px;
         }
 
         .navbar li a:hover {
-            color:aqua;
+            color :black;
         }
         .navbar div{
             border: 2px solid black;
             border: 7px;
         }
+        img{
+            float: left;
+            width: 80px;
+            padding-left: 0;
+            height: 80px;
+            
+        }
+        .Gallery{
+            width: 100%;
+            height: 100%;
+            
+        }
+        h2{
+        color: darkblue;
+        text-decoration: underline;
+        }
+        
+        .Gallery video{
+             padding: 20px;
+             margin: 5px;
+             float: left;
+             height: 350px;
+            width: 350px;
+            padding-right: 40px;
+        }
 
         /* CSS for Search */
-        .search {
-            float: right;
-            margin-top: 10px;
-        }
-
-        .search input[type="text"] {
-            padding: 5px;
-            width: 150px;
-            border: 2px solid black;
-        }
+       
     </style>
 </head>
 <body>
     <header>
+        <h1>Gallery Media Player</h1>
+
         <nav class="navbar">
+        <img src="images/beauty-logo.png">
+
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Contact us</a></li>
             </ul>
-            <div class="search">
-                <form>
-                    <input type="text" name="search" id="search" placeholder="Search this website">
-                </form>
-            </div>
+     
         </nav>
+        <h2>Video Media Player</h2>
+            <div class="Gallery">
+               <video src="Video/istockphoto-1158647615-640_adpp_is.mp4" controls></video>
+                <video src="Video/istockphoto-1478934162-640_adpp_is.mp4" controls></video>
+                <video src="Video/istockphoto-1911299449-640_adpp_is.mp4" controls></video>
+               
+
+            </div>
     </header>
 </body>
 </html>
