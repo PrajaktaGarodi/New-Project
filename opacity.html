@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transparent Hover Effect</title>
+    <style>
+        h1 {
+            color: lightcoral;
+            font-size: 50px;
+            font-style: oblique;
+            text-shadow: 10px;
+            text-align: center;
+        }
+
+        .comman {
+            height: 100%;
+            width: 100%;
+            /* background-color: cadetblue; */
+            float: left;
+        }
+
+        .img img {
+            /* background-color: aqua; */
+            height: 200px;
+            width: 200px;
+            margin: 10px;
+            /* padding: 50px; */
+            float: left;
+            margin-left: 150px;
+
+        }
+
+        img {
+            opacity: 0.5;
+        }
+
+        img:hover {
+            opacity: 1.0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transparent Hover Effect</h1>
+    <div class="comman">
+        <div class="img">
+            <img src="images/img_5terre.jpg" alt="" srcset="">
+        </div>
+        <div class="img">
+            <img src="images/img_mountains.jpg" alt="" srcset="">
+        </div>
+
+        <div class="img">
+            <img src="images/img_lights.jpg" alt="" srcset="">
+        </div>
+
+    </div>
+</body>
+
+</html>
