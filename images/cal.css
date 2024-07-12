@@ -1,0 +1,58 @@
+
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu {
+    height: 400px;
+    width: 400px;
+    background-color: rgb(197, 252, 254);
+    border-radius: 10px;
+  }
+  .menu h1 {
+    text-align: center;
+    
+    
+  }
+  .menu form {
+    display: flex;
+    flex-direction: column;
+  }
+  label {
+    padding: 5px;
+    margin: 5px;
+    font-size: 20px;
+    /* border-radius: 20px; */
+  }
+  input {
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+  }
+  button {
+    margin: 10px;
+    border-radius: 10px;
+  }
+  h2 {
+    text-align: center;
+  }
+  .input {
+    border-radius: 10px;
+    outline: 2px solid darkblue;
+    border: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: #fff;
+    outline-offset: 3px;
+    padding: 10px 1rem;
+    transition: 0.25s;
+  }
+
+  .input:focus {
+    outline-offset: 5px;
+    background-color: #fff;
+  }

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assigement</title>
+    <link rel="stylesheet" href="cal.css">
+    <script src="cal.js"></script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="menu">
+            <h1>Calculator</h1>
+            <form>
+                <label for="num1">Enter your First Number :</label>
+                <input type="text" id="num1">
+                <label for="num2">Enter your Second Number :</label>
+                <input type="text" id="num2">
+                <div class="btns">
+                    <button onclick="add(event)">Addition</button>
+                        <button onmouseover="sub(event)">Subtraction</button>
+                            <button onfocus="mul(event)">Multiplication</button>
+                                <button onkeydown="Div(event)">Division</button>
+                </div>
+                <input type="Reset">
+                </form>
+                <h2 id="total"></h2>
+        </div>
+    </div>
+</body>
+</html>
