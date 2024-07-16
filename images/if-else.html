@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Else</title>
+</head>
+<body>
+
+<label for="">Enter Your Age :</label>
+<input type="text"id="age">
+<br>
+<br>
+<button onclick="check()">Check</button>
+<p id="demo"></p>
+
+<script>
+    // const age = new age().getag/e(); 
+// let age;
+
+
+function check(){
+    age = document.getElementById("age").value;
+
+if( age > 18)
+{
+age = "eligible for voteing";
+}
+else{
+age = "not eligible for voteing";
+}
+
+// document.writ("let age");
+document.getElementById("demo").innerHTML =  age;
+
+}
+
+</script>
+
+</body>
+</html>
