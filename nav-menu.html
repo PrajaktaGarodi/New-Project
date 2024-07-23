@@ -4,80 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navigation menu</title>
-    <style>
-        /* CSS for Navbar */
-        h1{ 
-            text-align: center;
-            background-color:pink;
-            color: purple;
-            width: 100%;
-            height: 100%;
-            border: 15px;
-            border-radius: 15px;
-        }
-        .navbar {
-            background-color:gainsboro;
-            overflow: auto;
-            /* padding: 10px 20px; Add padding to navbar */
-            padding-left: 5%;
-        }
-
-        .navbar ul {
-            list-style-type: none;
-            padding-left: 50%;
-        }
-
-        .navbar li {
-            float: left;
-            margin-right: 20px;
-            
-        }
-
-        .navbar li a {
-            display: block;
-            padding: 10px;
-            color: green;
-            text-decoration: none;
-            font-size: 20px;
-            border-radius: 10px;
-        }
-
-        .navbar li a:hover {
-            color :black;
-        }
-        .navbar div{
-            border: 2px solid black;
-            border: 7px;
-        }
-        img{
-            float: left;
-            width: 80px;
-            padding-left: 0;
-            height: 80px;
-            
-        }
-        .main-container{
-            height: 400px;
-            width: 100%;
-            /* background-color: darkblue; */
-            margin-top: 25px;
-
-        }
-        .box1{
-            /* background-color: aqua; */
-            /* height: 78%; */
-            /* width:96%; */
-            float: left;
-            padding-top: 50px;
-            margin-top: 20px;
-            margin-left: 25px;
-        
-            
-        }
-        /* CSS for Search */
-       
-    </style>
+    
 </head>
+<link rel="stylesheet" href="nav-menu.css".css">
 <body>
     <header>
     
@@ -88,7 +17,14 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
+                <li class="submenu">
+                    <a href="#">Services</a>
+                    <div class="submenu-content">
+                        <a href="#"> service1</a>
+                        <a href="#">service2</a>
+                        <a href="#">service3</a>
+                    </div>
+                </li>
                 <li><a href="#">Contact us</a></li>
             </ul>
      
