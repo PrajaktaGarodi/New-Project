@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove And Empty Method</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#removebtn1").click(function(){
+                $("#box h3").remove();
+            })
+            $("#emptybtn2").click(function(){
+                $("#box p").empty();
+            })
+            
+        })
+
+
+    </script>
+    <style>
+         #box{
+            border: 1px solid black;
+            padding: 15px;
+            color: rgb(133, 37, 37);
+            font-size: 20px;
+            /* font-weight: 600; */
+            background-color:rgb(245, 215, 215);
+         }
+         button{
+            margin: 10px;
+            padding: 10px;
+            padding-left: 5px;
+            font-size: 20px;
+            background-color: transparent;
+         }
+    </style>
+</head>
+<body>
+     <h1>Remove And Empty Method</h1> 
+
+    <div id="box">
+     <h3>I am Lorem</h3>
+     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ea corporis officia, libero labore necessitatibus autem suscipit velit quae culpa, perspiciatis magni officiis, dolor dolorum aliquid ipsum iure ullam reiciendis? Optio, animi quibusdam.
+     </p>
+    </div>
+    <button id="removebtn1"> Remove</button>
+    <button id="emptybtn2">  Empty</button>
+</body>
+</html>

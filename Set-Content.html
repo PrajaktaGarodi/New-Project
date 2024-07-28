@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Content</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#text1").text(" Hey......!")
+            });
+            $("#btn2").click(function(){
+                $("#text2").html("<h1>Hello would......!</h1>")
+        });
+        $("#btn3").click(function(){
+            $("input").val(" I am a marry.....!") 
+        }); 
+    });
+
+
+    </script>
+</head>
+<body>
+     <h1>Set Content Text HTML Value</h1>
+     <p id="text1">this is a para </p>
+     <p id="text2">This is a para of Jquary</p>
+     <p> Input filed : <input type="text" id=" text3" value="Chota bheem"></p>
+
+    <button id="btn1"> Set Text</button>
+    <button id="btn2"> set Html</button>
+    <button id="btn3"> set Value</button>
+
+
+
+</body>
+</html>
