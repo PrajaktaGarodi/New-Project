@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Form Event </title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+       $(document).ready(function(){
+         $("input").focus(function(){
+                $(this).css("background-color", "yellow");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color", "green");
+            });
+            $("sumbit").change(function(){
+                $(this).css("background-color", "pink");
+            });
+            
+            
+
+        });
+
+    </script>
+    <style>
+          
+    </style>
+</head>
+<body>
+    <h1>FORM EVENT</h1>
+    <form action="">
+    <label for="#" id="sname">Name :</label>
+    <input type="text">
+    <br>
+    <br>
+    <label for="#" id="sclass">Class :</label>
+    <input type="text">
+    <br>
+    <br>
+   <button>SUMBIT</button>
+    
+</form>
+</body>
+</html>
