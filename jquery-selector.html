@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#list").css("colou","red");  
+            $("*").css("broder","2px solid red") ;    
+        });
+
+
+    </script>
+    <style>
+        .box {
+                border: 2px solid black;
+                padding: 10px;
+                background-color: rgb(173, 245, 245);
+                border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Trageting DOM element with id , class & tag</h1>
+    <div class="box">
+    <h2>test box</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio maiores ad repellendus delectus, vitae quisquam! Eius corporis culpa ratione, nobis perspiciatis nemo?</p>
+    </div>
+    <div id="list">
+        <ul>
+            <li>apple</li>
+            <li class="test">cat</li>
+            <li>dog</li>
+            <li class="test">fish</li>
+        </ul>
+
+
+
+
+    </div>
+
+
+
+
+</body>
+</html>
