@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Validation Form</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script>
+        // $.validator.seetDfaults({
+        //     submitHandler:function(){
+        //         alert("sumbitted...!");
+        //     }
+        // });
+
+        $(document).ready(function(){
+            $("#form-valid").validate({
+                rules:{
+                    firstname:"required",
+                    lastname:"required",
+                    username:{
+                        required: true,
+                        minlenghth: 2
+                    },
+                    password:{
+                        required: true,
+                        minlenghth: 8
+                    },
+                    confirm_password:{
+                        required: true,
+                        minlenghth:8,
+                        equalTo:true
+                    },
+                    email:{
+                        required: true,
+                        email: true
+                    },
+
+                },
+                messages:{
+                    firstname:"Please Enter your first name",
+                    lastname:"Please Enter Your last name",
+                    username:{
+                         required:"Please Enter a Username",
+                         minlenghth: "your username must least 2 characters"
+                },
+                password:{
+                        required: "Please enter a password",
+                        minlenghth:" Password must be 8 character long"
+                    },
+                confirm_password:{
+                    required: "Please  enter your provide a password",
+                    minlenghth:"your password must be 8 character long",
+                    equalTo:"Please enter your same password  as befour"
+                },
+                Email:"please enter your current email address"
+                },
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h1>Jquery Validation Form </h1>
+    <form action="" id="form-valid">
+        <p>
+            <label for="firstname"> First Name :</label>
+            <input  name="firstname"  id="fname" type="text">
+        </p>
+        <p>
+            <label for="lastname"> Last Name :</label>
+            <input  name="lastname"  id="lname" type="text">
+        </p>
+        <p>
+            <label for="email"> Email Id :</label>
+            <input  name="emailid"  id="emailid" type="email">
+        </p>
+        <p>
+            <label for=""> UserName :</label>
+            <input  name="username"  id="username" type="text">
+        </p>
+        <p>
+            <label for="Password"> Password Name :</label>
+            <input  name="password"  id="password" type="password">
+        </p>
+        <p>
+            <label for="ConfirmPassword"> Confirm Password :</label>
+            <input  name="ConfirmPassword"  id="ConfirmPassword" type="password">
+        </p>
+        <p>
+        <input class="submit" type="submit" value="Submit">
+        </p>
+        
+        
+        
+
+
+
+
+
+    </form>
+</body>
+</html>
