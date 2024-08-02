@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btn").click(function(){
+                // alert("click ")
+                $("h1,p").removeClass("head-style");
+                $("h1,p").addClass("para-style");
+            });
+        });
+    </script>
+<style>
+    .head-style{
+        color:blue;
+    }
+    .para-style{
+        font-size: 20px;
+        font-style: italic;
+    }
+</style>
+</head>
+<body>
+    <h1>I am Heading</h1>
+    <p class="head-style">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa ut porro dicta illo beatae distinctio, reiciendis modi blanditiis. Nemo blanditiis esse sunt. Aliquam doloribus quod perspiciatis dolores mollitia eligendi numquam illum ratione incidunt, hic ea eaque, dolore possimus inventore omnis, ipsum iste. Eaque at porro iste neque sint nostrum error.</p>
+    <button id="btn">Click</button>
+</body>
+</html>
